@@ -7,5 +7,6 @@
 # Visit https://pragprog.com/titles/dcsidekiq for more book information.
 #---
 Rails.application.config.to_prepare do
+  ErrorCatcherServiceWrapper.ignored_errors << IgnoreExceptionSinceSidekiqWillRetry
   # ErrorCatcherServiceWrapper.ignored_errors << error class here
 end
