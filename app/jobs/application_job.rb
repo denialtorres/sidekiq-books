@@ -7,6 +7,7 @@
 # Visit https://pragprog.com/titles/dcsidekiq for more book information.
 #---
 class ApplicationJob < ActiveJob::Base
+  include Sidekiq::Worker
   # Automatically retry jobs that encountered a deadlock
   # retry_on ActiveRecord::Deadlocked
 
