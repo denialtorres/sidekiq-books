@@ -53,4 +53,5 @@ group :test do
   # a breaking change and rather than stop the book release, I'm
   # hardcoding the version as instructed by the later versions of this gem.
   gem "webdrivers", "= 5.3.0"
+  gem "pry"
 end
